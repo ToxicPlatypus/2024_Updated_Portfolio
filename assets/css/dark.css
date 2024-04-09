@@ -903,6 +903,9 @@ header nav a:hover .svg_img {
   color: #777;
   line-height: 24px;
 }
+.left-align{
+  text-align: left !important;
+}
 .ms-about .ms-box h3 {
   font-size: 20px;
   color: #eee;
