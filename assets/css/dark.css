@@ -2398,3 +2398,7 @@ footer .ms-footer-detail .ms-social ul li a:hover {
           transform: translateY(0);
 }
 /*# sourceMappingURL=dark.css.map */
+
+.shadowed-font{
+  text-shadow: 0 0 3px #FF0000;
+}
