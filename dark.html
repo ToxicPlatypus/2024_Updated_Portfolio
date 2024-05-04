@@ -22,6 +22,7 @@
     <!-- site Favicon -->
     <link rel="icon" href="assets/img/favicon/favicon.png" sizes="32x32" />
     <link rel="apple-touch-icon" href="assets/img/favicon/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta
       name="msapplication-TileImage"
       content="assets/img/favicon/favicon.png"
@@ -35,8 +36,9 @@
     <link rel="stylesheet" href="assets/css/plugins/slick.min.css" />
 
     <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/dark.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/dark.css" id="dark-theme"/>
+    <link rel="stylesheet" href="assets/css/style.css" id="light-theme" disabled>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
   </head>
 
   <body>
@@ -734,6 +736,44 @@
                         </div>
                       </div>
 
+                      <div class="col-lg-6 mix design">
+                        <div class="ms-project-box">
+                          <h3>Convention Center</h3>
+                          <div class="links">
+                            <!-- <a href="#">Web Design</a> -->
+                            <small>Responsive Web Design.</small>
+                          </div>
+                          <p>
+                            A convention website with attractive packages and pricing.
+                          </p>
+                          <div class="ms-info">
+                            <div class="portfolio-img">
+                              <a
+                                class=""
+                                data-fancybox="gallery"
+                                href="assets/img/portfolio/4.jpg"
+                                style="
+                                  background-image: url(assets/img/portfolio/44.jpg);
+                                "
+                              >
+                                <span class="overlay">+</span>
+                              </a>
+                            </div>
+                            <div class="ms-detail">
+                              <ul>
+                                <li>Date : 5, April - 2022</li>
+                                <!-- <li>Client : John Worrior</li> -->
+                                <li>Tech : HTML, CSS, Bootstrap, Firebase, MongoDB</li>
+                                <li>Type : Store</li>
+                                <li>
+                                  URL : <a href="https://assignment-11-4cc8b.web.app/" target="_blank">Book Store</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       <!-- <div class="col-lg-6 mix development">
                         <div class="ms-project-box">
                           <h3>Doctory - Helth care</h3>
@@ -1232,7 +1272,7 @@
     <!-- End Clients Section -->
 
     <!-- Start Footer -->
-    <footer class="margin-t-80">
+    <footer class="margin-t-80 margin-r-50">
       <div class="container">
         <div class="ms-footer-detail">
           <div class="ms-copy">
@@ -1241,22 +1281,22 @@
           <div class="ms-social">
             <ul>
               <li>
-                <a href="https://www.facebook.com/" target="_blank"
+                <a href="https://www.facebook.com/rafidrabbi/" target="_blank"
                   ><i class="fa fa-facebook" aria-hidden="true"></i
                 ></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/" target="_blank"
+                <a href="https://www.instagram.com/rafid_rabbii/" target="_blank"
                   ><i class="fa fa-instagram" aria-hidden="true"></i
                 ></a>
               </li>
               <li>
-                <a href="https://twitter.com/" target="_blank"
+                <a href="https://twitter.com/rafidrabbi123" target="_blank"
                   ><i class="fa fa-twitter" aria-hidden="true"></i
                 ></a>
               </li>
               <li>
-                <a href="https://linkedin.com/" target="_blank"
+                <a href="https://www.linkedin.com/in/mohammadrafid/" target="_blank"
                   ><i class="fa fa-linkedin" aria-hidden="true"></i
                 ></a>
               </li>
@@ -1334,6 +1374,7 @@
           </ul>
         </div>
       </div>
+      <button class="toggle-theme" id="theme-toggle">Change Theme</button>
       <!--/ End Floating Panel Container -->
       <!-- Start Right Floating Button-->
       <!-- <div class="ms-right-bottom">
@@ -1368,7 +1409,7 @@
     <script src="assets/js/vendor/mixitup.min.js"></script>
     <script src="assets/js/vendor/jquery.fancybox.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/fontawesome.js"></script>
+    <!-- <script src="assets/js/vendor/fontawesome.js"></script> -->
 
     <!-- Scroll button animation for mouse hover Js -->
     <script src="assets/js/vendor/tweenmax.min.js"></script>
@@ -1377,3 +1418,18 @@
     <script src="assets/js/script.js"></script>
   </body>
 </html>
+
+<script>
+  document.getElementById('theme-toggle').addEventListener('click', function(){
+    let darkTheme = document.getElementById('dark-theme');
+    let lightTheme = document.getElementById('light-theme');
+
+    if (darkTheme.disabled) {
+          darkTheme.disabled = false;
+          lightTheme.disabled = true;
+      } else {
+          darkTheme.disabled = true;
+          lightTheme.disabled = false;
+      }
+  })
+</script>
