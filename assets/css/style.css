@@ -1342,7 +1342,7 @@ header nav a:hover .svg_img {
   font-weight: 700;
   font-family: "Poppins, sans-serif";
   color: #333;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .ms-experience .timeline {
